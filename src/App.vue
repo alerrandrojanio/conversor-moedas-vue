@@ -1,29 +1,35 @@
 <template>
-  <div id="app">
-    <Conversor moeda1="USD" moeda2="BRL"/>
+  <div class="container grid-lg my-2 py-2 text-dark">
+    <div class="card">
+      
+      <div class="card-header">
+        <div class="h4">EXIBINDO TODAS AS MOEDAS</div>
+      </div>
+
+      <div class="card-body">...</div>
+    </div>
+
   </div>
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-import Conversor from "./components/Conversor.vue"
-
+import Conversor from './components/Conversor.vue'
+import Api from './server/API'
 
 export default {
   name: 'app',
-  components: { Conversor }
+  components: {  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.h4 {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-bottom: 10px;
 }
+
+.card{
+
+}
+
 </style>
