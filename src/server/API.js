@@ -14,10 +14,10 @@ export default {
         return api.get('/all')
     },
 
-    converter(moedaA, moedaB){
+    async converter(moedaA, moedaB){
         let dePara = moedaA + "-" + moedaB
         
-        return api.get('/all' + dePara)
+        return await api.get('/all' + dePara)
     }
 
 }
